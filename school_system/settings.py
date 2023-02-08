@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.humanize",
+    "home",
+    "academics",
+    # Third party apps
+    "simple_history",
 ]
 
 MESSAGE_TAGS = {
@@ -83,7 +87,7 @@ WSGI_APPLICATION = "school_system.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "SchoolSystem",
@@ -92,8 +96,15 @@ DATABASES = {
         "HOST": "127.0.0.1",
         "PORT": "5432",
     }
+} """
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
 
+AUTH_USER_MODEL = "authentication.User"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
