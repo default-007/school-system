@@ -18,7 +18,8 @@ from django.urls import path, include
 from django.contrib.auth import views
 from django.conf import settings
 from django.conf.urls.static import static
-from users.views import change_password
+
+# from users.views import change_password
 
 admin.site.site_header = "School Management admin"
 admin.site.site_title = "School Management admin"

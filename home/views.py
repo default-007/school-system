@@ -8,7 +8,7 @@ from authentication.models import User
 class DashView(View):
     def render(self, request):
         context = {}
-        return render(request, "main.html", context)
+        return render(request, "pages/dash.html", context)
 
     def post(self, request):
         pass

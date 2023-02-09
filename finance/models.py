@@ -4,7 +4,7 @@ from simple_history.models import HistoricalRecords
 from authentication.models import User
 from constants import *
 from academics.models import *
-from dashboard.models import *
+from home.models import *
 from django.utils.translation import gettext_lazy as _
 
 

@@ -8,7 +8,7 @@ from academics.models import *
 class Grade(models.Model):
     session = models.ForeignKey(Session, on_delete=models.CASCADE)
     term = models.CharField(choices=TERM, max_length=7)
-    student = models.ForeignKey("dashboard.Student", on_delete=models.CASCADE)
+    student = models.ForeignKey("home.Student", on_delete=models.CASCADE)
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
     fca = models.IntegerField(null=True, blank=True)
     sca = models.IntegerField(null=True, blank=True)
@@ -74,7 +74,7 @@ class GradeScale(models.Model):
 
 
 class Ranking(models.Model):
-    student = models.ForeignKey("dashboard.Student", on_delete=models.CASCADE)
+    student = models.ForeignKey("home.Student", on_delete=models.CASCADE)
     term = models.CharField(max_length=12, choices=TERM)
     session = models.ForeignKey(Session, on_delete=models.CASCADE)
     cumulative = models.FloatField()

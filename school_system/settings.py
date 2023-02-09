@@ -38,8 +38,14 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.humanize",
+    # Internal Apps
     "home",
+    "finance",
     "academics",
+    "library",
+    "authentication",
+    "exams",
+    "users",
     # Third party apps
     "simple_history",
 ]

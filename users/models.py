@@ -1,7 +1,7 @@
 from django.db import models
 from authentication.models import User
 from simple_history.models import HistoricalRecords
-from dashboard.models import Student
+from home.models import Student
 
 
 # Create your models here.

@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.conf import settings
 from authentication.models import User
 from simple_history.models import HistoricalRecords
-from dashboard.models import *
+from home.models import *
 from constants import *
 from django.utils.translation import gettext_lazy as _
 

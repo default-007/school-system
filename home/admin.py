@@ -2,8 +2,8 @@ from django.contrib import admin
 from .models import *
 from simple_history.admin import SimpleHistoryAdmin
 
-# from import_export import resources
-# from import_export.admin import ImportMixin
+from import_export import resources
+from import_export.admin import ImportMixin
 
 
 class UserAdmin(SimpleHistoryAdmin):
