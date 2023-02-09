@@ -22,3 +22,5 @@ urlpatterns = [
     # Matches any html file
     # re_path(r"^.*\.*", views.pages, name="pages"),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
